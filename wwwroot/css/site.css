@@ -34,7 +34,25 @@
     }
 }
 
-.navbar.navbar-inverse.navbar-fixed-top {
+.navbar.navbar-inverse.navbar-fixed-top{
     background-color: blue;
     border-color: none;
+    color: aquamarine;
+}
+
+ {
+    color: aliceblue;
+}
+
+ {
+        color: black;
+}
+
+.navbar-inverse .navbar-brand,
+.nav.navbar-nav li a {
+    color: aliceblue;
+}
+.navbar-inverse .navbar-brand:hover,
+.nav.navbar-nav li a:hover {
+    color: black;
 }

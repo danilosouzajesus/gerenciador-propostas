@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Fornecedores";
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>@ViewData["Title"]:</h2>
+        </div>
+        <div class="col-md-8">
+            <h2>
+                <form class="navbar-form" role="search">
+                    <div class="input-group add-on">
+                        <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </h2>
+        </div>
+    </div>
+    </br>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>CNPJ</th>
+                        <th>Telefone</th>
+                        <th>Registro</th>
+                        <th>Procedencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Provip Hospitalar</td>
+                        <td>35.792.546/0001-07</td>
+                        <td>(11) 2346-4050</td>
+                        <td>123456789</td>
+                        <td>Brazil</td>
+                    </tr>
+                    <tr>
+                        <td>GSK GlaxoSmithKline</td>
+                        <td>33.247.743/0001-10</td>
+                        <td>(21) 2141-6000</td>
+                        <td>123456789</td>
+                        <td>Brazil</td>
+                    </tr>
+                    <tr>
+                        <td>EMS Pharma</td>
+                        <td>57.507.378/0003-65</td>
+                        <td>(11) 2104-1630</td>
+                        <td>123456789</td>
+                        <td>Brazil</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Adicionar Fornecedor</button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Adicionar Fornecedor</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Nome da Empresa:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">CNPJ:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Apelido:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Telefone:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Registro:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Procedencia:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -15,14 +15,35 @@ namespace gerenciador_propostas.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Fornecedores()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Produtos()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Clientes()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Configuracoes()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Propostas()
         {
             ViewData["Message"] = "Your contact page.";
 
