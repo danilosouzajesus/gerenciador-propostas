@@ -56,3 +56,7 @@
 .nav.navbar-nav li a:hover {
     color: black;
 }
+
+.paddingtop {
+	padding-top: 30px;
+}
