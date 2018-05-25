@@ -15,10 +15,6 @@ namespace gerenciador_propostas
     {
         public static void Main(string[] args)
         {
-            var doc = DocX.Create(@"MyFile.docx");
-            var p = doc.InsertParagraph();
-            p.Append("Hello World");
-            doc.Save();
             BuildWebHost(args).Run();
         }
 

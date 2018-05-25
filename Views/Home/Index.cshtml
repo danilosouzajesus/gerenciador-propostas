@@ -1,75 +1,77 @@
-﻿@{
-    ViewData["Title"] = "Gerenciador de Propostas";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = @Localizer["Title"];
 }
 <div class="container paddingtop">
-	<div class="row paddingtop">
-		<div class="col-md-12">
-			<h2>Ultimas Licitações:</h2>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Dia</th>
-						<th>Horário</th>
-						<th>Cliente</th>
-						<th>Resultado</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>20/03/2018</td>
-						<td>14:50</td>
-						<td>Hospital das Clinicas</td>
-						<td>Ganhou</td>
-					</tr>
-					<tr>
-						<td>25/03/2018</td>
-						<td>12:30</td>
-						<td>Hospital das Clinicas</td>
-						<td>Ganhou</td>
-					</tr>
-					<tr>
-						<td>28/03/2018</td>
-						<td>15:00</td>
-						<td>Hospital das Clinicas</td>
-						<td>Perdeu</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h2>Proximas Propostas:</h2>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Dia</th>
-						<th>Horário</th>
-						<th>Cliente</th>
-						<th>Ação</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>20/03/2018</td>
-						<td>14:50</td>
-						<td>Hospital das Clinicas</td>
-						<td><a href="#">Visualizar</a></td>
-					</tr>
-					<tr>
-						<td>25/03/2018</td>
-						<td>12:30</td>
-						<td>Hospital das Clinicas</td>
-						<td><a href="#">Visualizar</a></td>
-					</tr>
-					<tr>
-						<td>28/03/2018</td>
-						<td>15:00</td>
-						<td>Hospital das Clinicas</td>
-						<td><a href="#">Visualizar</a></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+    <div class="row paddingtop">
+        <div class="col-md-12">
+            <h2>Ultimas Licitações:</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>@Localizer.GetString("Title")</th>
+                        <th>Horário</th>
+                        <th>Cliente</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20/03/2018</td>
+                        <td>14:50</td>
+                        <td>Hospital das Clinicas</td>
+                        <td>Ganhou</td>
+                    </tr>
+                    <tr>
+                        <td>25/03/2018</td>
+                        <td>12:30</td>
+                        <td>Hospital das Clinicas</td>
+                        <td>Ganhou</td>
+                    </tr>
+                    <tr>
+                        <td>28/03/2018</td>
+                        <td>15:00</td>
+                        <td>Hospital das Clinicas</td>
+                        <td>Perdeu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Proximas Propostas:</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <th>Cliente</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20/03/2018</td>
+                        <td>14:50</td>
+                        <td>Hospital das Clinicas</td>
+                        <td><a href="#">Visualizar</a></td>
+                    </tr>
+                    <tr>
+                        <td>25/03/2018</td>
+                        <td>12:30</td>
+                        <td>Hospital das Clinicas</td>
+                        <td><a href="#">Visualizar</a></td>
+                    </tr>
+                    <tr>
+                        <td>28/03/2018</td>
+                        <td>15:00</td>
+                        <td>Hospital das Clinicas</td>
+                        <td><a href="#">Visualizar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
